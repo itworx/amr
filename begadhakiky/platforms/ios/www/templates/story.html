@@ -1,0 +1,30 @@
+<ion-view title="Story"  hide-back-button="true">
+
+    <ion-content has-header="true" padding="true">
+
+        <div class="list card">
+            <div class="item item-image">
+                <img src="{{ story.source }}" />
+            </div>
+
+            <div class="item tabs tabs-secondary tabs-icon-left">
+
+            <a class="tab-item" ng-click="like(story.id)">
+                <i class="icon ion-thumbsup"></i>
+                Like
+            </a>
+            <a class="tab-item" ng-click="comment(story.id)">
+            <i class="icon ion-chatbox"></i>
+                Comment
+            </a>
+
+            <a class="tab-item" href="#/app/share/{{story.id}}">
+            <i class="icon ion-share"></i>
+                Share
+            </a>
+            </div>
+        </div>
+
+    </ion-content>
+
+</ion-view>
