@@ -1,9 +1,5 @@
 angular.module('sociogram.controllers', [])
 
-    .factory('Story', function() {
-        return {id:'0'}
-    })
-
     .controller('AppCtrl', function ($scope, $state, OpenFB) {
 
         $scope.logout = function () {
@@ -145,7 +141,7 @@ angular.module('sociogram.controllers', [])
         function loadFeed() {
             $scope.show();
 
-            OpenFB.get('/begadhakiky/photos/uploaded', {limit:5,
+            OpenFB.get('/begadhakiky/photos/uploaded', {limit:3,
                 fields:"name, source, likes.limit(1).summary(true), comments.limit(1).summary(true)"})
                 .success(function (result) {
 
@@ -156,14 +152,38 @@ angular.module('sociogram.controllers', [])
                     $scope.next = result.paging.next;
                 })
                 .error(function(data) {
-                    $scope.hide();
+                    //$scope.hide();
                     alert(data.error.message);
                 });
         }
 
-        //$scope.doRefresh = loadFeed;
+        $scope.doRefresh = loadFeed;
 
         loadFeed();
+
+        $scope.loadMore = function(){
+
+            alert('I come here');
+            alert($scope.next);
+            OpenFB.get($scope.next)
+                .success(function (result) {
+
+                    $scope.hide();
+
+                    angular.forEach(result.data, function(obj) {
+                        $scope.items.push(obj);
+                    });
+
+
+                    console.log(result.data);
+                    $scope.next = result.paging.next;
+                })
+                .error(function(data) {
+                    //$scope.hide();
+                    alert(data.error.message);
+                });
+
+        }
 
 
     });

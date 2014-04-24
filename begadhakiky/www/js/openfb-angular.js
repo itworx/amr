@@ -168,7 +168,7 @@ angular.module('openfb', [])
 
             params['access_token'] = tokenStore['fbtoken'];
 
-            return $http({method: method, url: 'https://graph.facebook.com' + obj.path, params: params})
+            return $http({method: method, url: 'https://graph.facebook.com' + obj.path.replace("https://graph.facebook.com", ""), params: params})
                 .error(function(data, status, headers, config) {
                     if (data.error && data.error.type === 'OAuthException') {
                         $rootScope.$emit('OAuthException');
