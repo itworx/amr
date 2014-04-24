@@ -1,10 +1,10 @@
-<ion-view title="Story"  hide-back-button="true">
+<ion-view title="Story">
 
     <ion-content has-header="true" padding="true">
 
         <div class="list card">
             <div class="item item-image">
-                <img src="{{ story.source }}" />
+                <img src="{{story.source}}" />
             </div>
 
             <div class="item tabs tabs-secondary tabs-icon-left">
@@ -13,7 +13,7 @@
                 <i class="icon ion-thumbsup"></i>
                 Like
             </a>
-            <a class="tab-item" ng-click="comment(story.id)">
+            <a class="tab-item" href="#/app/comment/{{story.id}}">
             <i class="icon ion-chatbox"></i>
                 Comment
             </a>

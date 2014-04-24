@@ -1,79 +1,136 @@
-// Ionic Starter App
+angular.module('sociogram', ['ionic', 'openfb', 'sociogram.controllers'])
 
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-// 'starter.services' is found in services.js
-// 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+    .run(function ($rootScope, $state, $ionicPlatform, $window, OpenFB) {
 
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    if(window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-    }
-  });
-})
+        OpenFB.init('800832283261975');
 
-.config(function($stateProvider, $urlRouterProvider) {
+        $ionicPlatform.ready(function () {
+            if (window.StatusBar) {
+                StatusBar.styleDefault();
+            }
+        });
 
-  // Ionic uses AngularUI Router which uses the concept of states
-  // Learn more here: https://github.com/angular-ui/ui-router
-  // Set up the various states which the app can be in.
-  // Each state's controller can be found in controllers.js
-  $stateProvider
+        $rootScope.$on('$stateChangeStart', function(event, toState) {
+            if (toState.name !== "app.login" && toState.name !== "app.logout" && !$window.sessionStorage['fbtoken']) {
+                $state.go('app.login');
+                event.preventDefault();
+            }
+        });
 
-    // setup an abstract state for the tabs directive
-    .state('tab', {
-      url: "/tab",
-      abstract: true,
-      templateUrl: "templates/tabs.html"
+        $rootScope.$on('OAuthException', function() {
+            $state.go('app.login');
+        });
+
     })
 
-    // Each tab has its own nav history stack:
+    .config(function ($stateProvider, $urlRouterProvider) {
+        $stateProvider
 
-    .state('tab.dash', {
-      url: '/dash',
-      views: {
-        'tab-dash': {
-          templateUrl: 'templates/tab-dash.html',
-          controller: 'DashCtrl'
-        }
-      }
-    })
+            .state('app', {
+                url: "/app",
+                abstract: true,
+                templateUrl: "templates/menu.html",
+                controller: "AppCtrl"
+            })
 
-    .state('tab.friends', {
-      url: '/friends',
-      views: {
-        'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
-        }
-      }
-    })
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
-      views: {
-        'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
-          controller: 'FriendDetailCtrl'
-        }
-      }
-    })
+            .state('app.login', {
+                url: "/login",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/login.html",
+                        controller: "LoginCtrl"
+                    }
+                }
+            })
 
-    .state('tab.account', {
-      url: '/account',
-      views: {
-        'tab-account': {
-          templateUrl: 'templates/tab-account.html',
-          controller: 'AccountCtrl'
-        }
-      }
-    })
+            .state('app.logout', {
+                url: "/logout",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/logout.html",
+                        controller: "LogoutCtrl"
+                    }
+                }
+            })
 
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+            .state('app.profile', {
+                url: "/profile",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/profile.html",
+                        controller: "ProfileCtrl"
+                    }
+                }
+            })
 
-});
+            .state('app.share', {
+                url: "/share/:storyId",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/share.html",
+                        controller: "ShareCtrl"
+                    }
+                }
+            })
+
+            .state('app.comment', {
+                url: "/comment/:storyId",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/comment.html",
+                        controller: "CommentCtrl"
+                    }
+                }
+            })
+
+            .state('app.friends', {
+                url: "/person/:personId/friends",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/friend-list.html",
+                        controller: "FriendsCtrl"
+                    }
+                }
+            })
+            .state('app.mutualfriends', {
+                url: "/person/:personId/mutualfriends",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/mutual-friend-list.html",
+                        controller: "MutualFriendsCtrl"
+                    }
+                }
+            })
+            .state('app.person', {
+                url: "/person/:personId",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/person.html",
+                        controller: "PersonCtrl"
+                    }
+                }
+            })
+            .state('app.feed', {
+                url: "/person/:personId/feed",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/feed.html",
+                        controller: "FeedCtrl"
+                    }
+                }
+            })
+            .state('app.story', {
+                url: "/story/:storyId",
+                views: {
+                    'menuContent':{
+                        templateUrl:"templates/story.html",
+                        controller:"StoryCtrl"
+                    }
+                }
+            });
+
+        // fallback route
+        $urlRouterProvider.otherwise('/app/person/me/feed');
+
+    });
 

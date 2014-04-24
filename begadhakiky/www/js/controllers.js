@@ -40,12 +40,11 @@ angular.module('sociogram.controllers', [])
 
     .controller('ShareCtrl', function ($scope, $stateParams, OpenFB) {
 
-        alert($stateParams.storyId);
         OpenFB.get('/' + $stateParams.storyId).success(function (result) {
             $scope.story = result;
             $scope.item = {};
 
-            $scope.item.message = "@begadhakiky";
+            $scope.item.message = "#بجد_حقيقي";
             $scope.item.link = result.link;
         });
 
@@ -59,6 +58,28 @@ angular.module('sociogram.controllers', [])
                     alert(data.error.message);
                 });
         };
+
+    })
+
+    .controller('CommentCtrl', function ($scope, $stateParams, OpenFB) {
+
+
+        OpenFB.get('/' + $stateParams.storyId).success(function (result) {
+            $scope.story = result;
+            $scope.item = {};
+
+        });
+
+        $scope.comment = function () {
+            OpenFB.post('/'+$stateParams.storyId+'/comments', $scope.item)
+                .success(function () {
+                    alert("Comment posted!");
+                })
+                .error(function(data) {
+                    alert(data.error.message);
+                });
+        };
+
 
     })
 
@@ -108,46 +129,6 @@ angular.module('sociogram.controllers', [])
                     alert(data.error.message);
                 });
         };
-
-        $scope.share = function () {
-
-//            $ionicModal.fromUrl("https://www.facebook.com/sharer/sharer.php?u="+$scope.story.link, function(modal) {
-//                $scope.taskModal = modal;
-//            }, {
-//                scope: $scope,
-//                animation: 'slide-in-up'
-//            });
-//
-//            // Open our new task modal
-//            $scope.showShare = function() {
-//                $scope.taskModal.show();
-//            };
-//
-//            showShare();
-
-//            alert($scope.story.link);
-//            OpenFB.post('/me/feed', $scope.story.link)
-//                .success(function () {
-//                    alert("shared");
-//                    //$scope.status = "This item has been shared on OpenFB";
-//                })
-//                .error(function(data) {
-//                    alert(data.error.message);
-//                });
-        };
-
-        $scope.comment = function (storyId) {
-
-            alert('you are commenting');
-//            OpenFB.post('/'+storyId+'/comments', {message:storyId})
-//                .success(function () {
-//                    $scope.status = "Photo liked!";
-//                })
-//                .error(function(data) {
-//                    alert(data.error.message);
-//                });
-        };
-
     })
 
     .controller('FeedCtrl', function ($scope, $stateParams, OpenFB, $ionicLoading) {
@@ -164,7 +145,7 @@ angular.module('sociogram.controllers', [])
         function loadFeed() {
             $scope.show();
 
-            OpenFB.get('/begadhakiky/photos/uploaded', {//limit:1,
+            OpenFB.get('/begadhakiky/photos/uploaded', {limit:5,
                 fields:"name, source, likes.limit(1).summary(true), comments.limit(1).summary(true)"})
                 .success(function (result) {
 
@@ -172,6 +153,7 @@ angular.module('sociogram.controllers', [])
                     $scope.items = result.data;
                     // Used with pull-to-refresh
                     $scope.$broadcast('scroll.refreshComplete');
+                    $scope.next = result.paging.next;
                 })
                 .error(function(data) {
                     $scope.hide();
@@ -179,8 +161,9 @@ angular.module('sociogram.controllers', [])
                 });
         }
 
-        $scope.doRefresh = loadFeed;
+        //$scope.doRefresh = loadFeed;
 
         loadFeed();
+
 
     });

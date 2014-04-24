@@ -322,3 +322,100 @@
 2014-04-21 23:33:32.582 BegadHakiky[6678:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
 2014-04-21 23:33:32.599 BegadHakiky[6678:70b] webView:didFailLoadWithError - -1009: The Internet connection appears to be offline.
 2014-04-21 23:33:52.728 BegadHakiky[6678:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-22 16:49:29.570 BegadHakiky[10928:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-22 16:49:29.589 BegadHakiky[10928:70b] Unlimited access to network resources
+2014-04-22 16:49:29.645 BegadHakiky[10928:70b] [CDVTimer][statusbar] 19.044995ms
+2014-04-22 16:49:29.645 BegadHakiky[10928:70b] [CDVTimer][TotalPluginStartup] 19.865036ms
+2014-04-22 16:49:29.828 BegadHakiky[10928:70b] Resetting plugins due to page load.
+2014-04-22 16:49:30.317 BegadHakiky[10928:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-22 16:49:41.361 BegadHakiky[10928:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-22 16:49:41.364 BegadHakiky[10928:70b] THREAD WARNING: ['InAppBrowser'] took '20.866211' ms. Plugin should use a background thread.
+2014-04-23 23:04:19.881 BegadHakiky[14438:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-23 23:04:19.919 BegadHakiky[14438:70b] Unlimited access to network resources
+2014-04-23 23:04:20.311 BegadHakiky[14438:70b] [CDVTimer][statusbar] 81.947982ms
+2014-04-23 23:04:20.312 BegadHakiky[14438:70b] [CDVTimer][TotalPluginStartup] 82.686007ms
+2014-04-23 23:04:20.618 BegadHakiky[14438:70b] Resetting plugins due to page load.
+2014-04-23 23:04:21.279 BegadHakiky[14438:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-23 23:04:22.445 BegadHakiky[14438:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-23 23:04:22.452 BegadHakiky[14438:70b] THREAD WARNING: ['InAppBrowser'] took '40.406982' ms. Plugin should use a background thread.
+2014-04-24 00:55:29.199 BegadHakiky[17588:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-24 00:55:29.205 BegadHakiky[17588:70b] Unlimited access to network resources
+2014-04-24 00:55:29.230 BegadHakiky[17588:70b] [CDVTimer][statusbar] 9.465992ms
+2014-04-24 00:55:29.231 BegadHakiky[17588:70b] [CDVTimer][TotalPluginStartup] 10.462999ms
+2014-04-24 00:55:29.276 BegadHakiky[17588:70b] Resetting plugins due to page load.
+2014-04-24 00:55:29.521 BegadHakiky[17588:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-24 00:55:40.166 BegadHakiky[17588:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-24 00:55:40.169 BegadHakiky[17588:70b] THREAD WARNING: ['InAppBrowser'] took '34.670898' ms. Plugin should use a background thread.
+2014-04-24 01:17:14.999 BegadHakiky[18334:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-24 01:17:15.005 BegadHakiky[18334:70b] Unlimited access to network resources
+2014-04-24 01:17:15.026 BegadHakiky[18334:70b] [CDVTimer][statusbar] 6.689966ms
+2014-04-24 01:17:15.027 BegadHakiky[18334:70b] [CDVTimer][TotalPluginStartup] 7.152021ms
+2014-04-24 01:17:15.056 BegadHakiky[18334:70b] Resetting plugins due to page load.
+2014-04-24 01:17:15.226 BegadHakiky[18334:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-24 01:18:03.563 BegadHakiky[18334:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-24 01:18:03.566 BegadHakiky[18334:70b] THREAD WARNING: ['InAppBrowser'] took '22.535156' ms. Plugin should use a background thread.
+2014-04-24 01:33:56.777 BegadHakiky[18937:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-24 01:33:56.783 BegadHakiky[18937:70b] Unlimited access to network resources
+2014-04-24 01:33:56.805 BegadHakiky[18937:70b] [CDVTimer][statusbar] 7.197976ms
+2014-04-24 01:33:56.806 BegadHakiky[18937:70b] [CDVTimer][TotalPluginStartup] 7.912040ms
+2014-04-24 01:33:56.835 BegadHakiky[18937:70b] Resetting plugins due to page load.
+2014-04-24 01:33:57.011 BegadHakiky[18937:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-24 01:34:14.918 BegadHakiky[18937:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-24 01:34:14.922 BegadHakiky[18937:70b] THREAD WARNING: ['InAppBrowser'] took '28.228027' ms. Plugin should use a background thread.
+2014-04-24 01:44:28.444 BegadHakiky[19411:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-24 01:44:28.450 BegadHakiky[19411:70b] Unlimited access to network resources
+2014-04-24 01:44:28.472 BegadHakiky[19411:70b] [CDVTimer][statusbar] 7.251978ms
+2014-04-24 01:44:28.473 BegadHakiky[19411:70b] [CDVTimer][TotalPluginStartup] 7.992983ms
+2014-04-24 01:44:28.500 BegadHakiky[19411:70b] Resetting plugins due to page load.
+2014-04-24 01:44:28.712 BegadHakiky[19411:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-24 01:44:34.572 BegadHakiky[19411:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-24 01:44:34.576 BegadHakiky[19411:70b] THREAD WARNING: ['InAppBrowser'] took '25.418213' ms. Plugin should use a background thread.
+2014-04-24 01:49:19.715 BegadHakiky[19757:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-24 01:49:19.722 BegadHakiky[19757:70b] Unlimited access to network resources
+2014-04-24 01:49:19.744 BegadHakiky[19757:70b] [CDVTimer][statusbar] 6.743014ms
+2014-04-24 01:49:19.744 BegadHakiky[19757:70b] [CDVTimer][TotalPluginStartup] 7.194996ms
+2014-04-24 01:49:19.771 BegadHakiky[19757:70b] Resetting plugins due to page load.
+2014-04-24 01:49:19.951 BegadHakiky[19757:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-24 01:49:36.214 BegadHakiky[19757:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-24 01:49:36.217 BegadHakiky[19757:70b] THREAD WARNING: ['InAppBrowser'] took '19.385254' ms. Plugin should use a background thread.
+2014-04-24 01:51:41.708 BegadHakiky[20046:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-24 01:51:41.726 BegadHakiky[20046:70b] Unlimited access to network resources
+2014-04-24 01:51:41.775 BegadHakiky[20046:70b] [CDVTimer][statusbar] 15.415013ms
+2014-04-24 01:51:41.776 BegadHakiky[20046:70b] [CDVTimer][TotalPluginStartup] 16.331017ms
+2014-04-24 01:51:41.832 BegadHakiky[20046:70b] Resetting plugins due to page load.
+2014-04-24 01:51:42.128 BegadHakiky[20046:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-24 01:52:12.729 BegadHakiky[20046:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-24 01:52:12.732 BegadHakiky[20046:70b] THREAD WARNING: ['InAppBrowser'] took '18.755859' ms. Plugin should use a background thread.
+2014-04-24 01:57:17.184 BegadHakiky[20409:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-24 01:57:17.190 BegadHakiky[20409:70b] Unlimited access to network resources
+2014-04-24 01:57:17.213 BegadHakiky[20409:70b] [CDVTimer][statusbar] 6.819963ms
+2014-04-24 01:57:17.213 BegadHakiky[20409:70b] [CDVTimer][TotalPluginStartup] 7.262051ms
+2014-04-24 01:57:17.242 BegadHakiky[20409:70b] Resetting plugins due to page load.
+2014-04-24 01:57:17.419 BegadHakiky[20409:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-24 01:57:23.177 BegadHakiky[20409:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-24 01:57:23.182 BegadHakiky[20409:70b] THREAD WARNING: ['InAppBrowser'] took '34.532959' ms. Plugin should use a background thread.
+2014-04-24 01:58:20.664 BegadHakiky[20671:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-24 01:58:20.673 BegadHakiky[20671:70b] Unlimited access to network resources
+2014-04-24 01:58:20.697 BegadHakiky[20671:70b] [CDVTimer][statusbar] 7.301986ms
+2014-04-24 01:58:20.697 BegadHakiky[20671:70b] [CDVTimer][TotalPluginStartup] 7.739007ms
+2014-04-24 01:58:20.732 BegadHakiky[20671:70b] Resetting plugins due to page load.
+2014-04-24 01:58:20.944 BegadHakiky[20671:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-24 01:58:26.331 BegadHakiky[20671:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-24 01:58:26.334 BegadHakiky[20671:70b] THREAD WARNING: ['InAppBrowser'] took '28.212646' ms. Plugin should use a background thread.
+2014-04-24 02:02:09.418 BegadHakiky[20671:3f03] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-04-24 02:08:38.869 BegadHakiky[21140:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-24 02:08:38.876 BegadHakiky[21140:70b] Unlimited access to network resources
+2014-04-24 02:08:38.897 BegadHakiky[21140:70b] [CDVTimer][statusbar] 6.785989ms
+2014-04-24 02:08:38.897 BegadHakiky[21140:70b] [CDVTimer][TotalPluginStartup] 7.218957ms
+2014-04-24 02:08:38.925 BegadHakiky[21140:70b] Resetting plugins due to page load.
+2014-04-24 02:08:39.106 BegadHakiky[21140:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-24 02:08:46.384 BegadHakiky[21140:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-24 02:08:46.392 BegadHakiky[21140:70b] THREAD WARNING: ['InAppBrowser'] took '36.888184' ms. Plugin should use a background thread.
+2014-04-24 02:20:16.405 BegadHakiky[21640:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-24 02:20:16.411 BegadHakiky[21640:70b] Unlimited access to network resources
+2014-04-24 02:20:16.435 BegadHakiky[21640:70b] [CDVTimer][statusbar] 6.696999ms
+2014-04-24 02:20:16.436 BegadHakiky[21640:70b] [CDVTimer][TotalPluginStartup] 7.169962ms
+2014-04-24 02:20:16.464 BegadHakiky[21640:70b] Resetting plugins due to page load.
+2014-04-24 02:20:16.664 BegadHakiky[21640:70b] Finished load of: file:///Users/amr/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4A705515-D2F3-4385-B9D3-68269FBEA2C8/BegadHakiky.app/www/index.html#/app/login
+2014-04-24 02:20:21.668 BegadHakiky[21640:70b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-04-24 02:20:21.671 BegadHakiky[21640:70b] THREAD WARNING: ['InAppBrowser'] took '22.610840' ms. Plugin should use a background thread.

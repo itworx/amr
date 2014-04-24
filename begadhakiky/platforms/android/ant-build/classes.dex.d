@@ -1,0 +1,25 @@
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes.dex : \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/com/begadhakiky/app/BuildConfig.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/com/begadhakiky/app/HelloCordova.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/com/begadhakiky/app/R$attr.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/com/begadhakiky/app/R$drawable.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/com/begadhakiky/app/R$string.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/com/begadhakiky/app/R$xml.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/com/begadhakiky/app/R.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/com/ionicframework/starter/HelloCordova.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$1.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$2.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$3.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$4$1.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$4.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$1.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$2.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$3.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$4.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$InAppBrowserClient.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowserDialog.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppChromeClient.class \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/dexedLibs/classes-c6840f1d50652919ffaed80537a92961.jar \

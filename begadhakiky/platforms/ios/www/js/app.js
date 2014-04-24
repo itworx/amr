@@ -73,6 +73,16 @@ angular.module('sociogram', ['ionic', 'openfb', 'sociogram.controllers'])
                 }
             })
 
+            .state('app.comment', {
+                url: "/comment/:storyId",
+                views: {
+                    'menuContent': {
+                        templateUrl: "templates/comment.html",
+                        controller: "CommentCtrl"
+                    }
+                }
+            })
+
             .state('app.friends', {
                 url: "/person/:personId/friends",
                 views: {
