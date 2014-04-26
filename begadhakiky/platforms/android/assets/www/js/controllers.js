@@ -1,9 +1,5 @@
 angular.module('sociogram.controllers', [])
 
-    .factory('Story', function() {
-        return {id:'0'}
-    })
-
     .controller('AppCtrl', function ($scope, $state, OpenFB) {
 
         $scope.logout = function () {
@@ -52,7 +48,7 @@ angular.module('sociogram.controllers', [])
         $scope.share = function () {
             OpenFB.post('/me/feed', $scope.item)
                 .success(function () {
-                    $scope.status = "This item has been shared on OpenFB";
+                    $scope.status = "This item has been shared on your facebook wall";
                 })
                 .error(function(data) {
                     alert(data.error.message);
@@ -73,7 +69,7 @@ angular.module('sociogram.controllers', [])
         $scope.comment = function () {
             OpenFB.post('/'+$stateParams.storyId+'/comments', $scope.item)
                 .success(function () {
-                    alert("Comment posted!");
+                    $scope.status = "You comment has been posted";
                 })
                 .error(function(data) {
                     alert(data.error.message);
@@ -129,46 +125,6 @@ angular.module('sociogram.controllers', [])
                     alert(data.error.message);
                 });
         };
-
-        $scope.share = function () {
-
-//            $ionicModal.fromUrl("https://www.facebook.com/sharer/sharer.php?u="+$scope.story.link, function(modal) {
-//                $scope.taskModal = modal;
-//            }, {
-//                scope: $scope,
-//                animation: 'slide-in-up'
-//            });
-//
-//            // Open our new task modal
-//            $scope.showShare = function() {
-//                $scope.taskModal.show();
-//            };
-//
-//            showShare();
-
-//            alert($scope.story.link);
-//            OpenFB.post('/me/feed', $scope.story.link)
-//                .success(function () {
-//                    alert("shared");
-//                    //$scope.status = "This item has been shared on OpenFB";
-//                })
-//                .error(function(data) {
-//                    alert(data.error.message);
-//                });
-        };
-
-        $scope.comment = function (storyId) {
-
-            alert('you are commenting');
-//            OpenFB.post('/'+storyId+'/comments', {message:storyId})
-//                .success(function () {
-//                    $scope.status = "Photo liked!";
-//                })
-//                .error(function(data) {
-//                    alert(data.error.message);
-//                });
-        };
-
     })
 
     .controller('FeedCtrl', function ($scope, $stateParams, OpenFB, $ionicLoading) {
@@ -185,7 +141,7 @@ angular.module('sociogram.controllers', [])
         function loadFeed() {
             $scope.show();
 
-            OpenFB.get('/begadhakiky/photos/uploaded', {//limit:1,
+            OpenFB.get('/768581376487994/photos', {limit:4,
                 fields:"name, source, likes.limit(1).summary(true), comments.limit(1).summary(true)"})
                 .success(function (result) {
 
@@ -193,9 +149,10 @@ angular.module('sociogram.controllers', [])
                     $scope.items = result.data;
                     // Used with pull-to-refresh
                     $scope.$broadcast('scroll.refreshComplete');
+                    $scope.next = result.paging.next;
                 })
                 .error(function(data) {
-                    $scope.hide();
+                    //$scope.hide();
                     alert(data.error.message);
                 });
         }
@@ -203,5 +160,26 @@ angular.module('sociogram.controllers', [])
         $scope.doRefresh = loadFeed;
 
         loadFeed();
+
+        $scope.loadMore = function(){
+
+            OpenFB.get($scope.next)
+                .success(function (result) {
+
+                    $scope.hide();
+
+                    angular.forEach(result.data, function(obj) {
+                        $scope.items.push(obj);
+                    });
+
+
+                    console.log(result.data);
+                    $scope.next = result.paging.next;
+                })
+                .error(function(data) {
+                    //$scope.hide();
+                    alert(data.error.message);
+                });
+        }
 
     });

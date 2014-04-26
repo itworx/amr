@@ -1,4 +1,4 @@
-angular.module('sociogram', ['ionic', 'openfb', 'sociogram.controllers'])
+angular.module('begadhakiky', ['ionic', 'openfb', 'sociogram.controllers'])
 
     .run(function ($rootScope, $state, $ionicPlatform, $window, OpenFB) {
 
@@ -7,6 +7,35 @@ angular.module('sociogram', ['ionic', 'openfb', 'sociogram.controllers'])
         $ionicPlatform.ready(function () {
             if (window.StatusBar) {
                 StatusBar.styleDefault();
+            }
+
+
+
+            if( window.plugins && window.plugins.AdMob ) {
+                var admob_ios_key = 'ca-app-pub-1435204346149710/9888674387';
+                var admob_android_key = 'ca-app-pub-1435204346149710/9888674387';
+                var adId = (navigator.userAgent.indexOf('Android') >=0) ? admob_android_key : admob_ios_key;
+                var am = window.plugins.AdMob;
+
+                am.createBannerView(
+                    {
+                        'publisherId': adId,
+                        'adSize': am.AD_SIZE.BANNER,
+                        'bannerAtTop': false
+                    },
+                    function() {
+                        am.requestAd(
+                            { 'isTesting':false },
+                            function(){
+                                am.showAd( true );
+                            },
+                            function(){ alert('failed to request ad'); }
+                        );
+                    },
+                    function(){ alert('failed to create banner view'); }
+                );
+            } else {
+                alert('AdMob plugin not available/ready.');
             }
         });
 

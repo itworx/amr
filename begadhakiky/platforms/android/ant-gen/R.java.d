@@ -18,6 +18,7 @@
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/res/drawable-xxhdpi/icon.png \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/res/drawable-xxxhdpi/icon.png \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/res/values/strings.xml \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/res/values/version.xml \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/res/xml/config.xml \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/res/drawable/icon.png \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/res/drawable-hdpi/ic_action_next_item.png \

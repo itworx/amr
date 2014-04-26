@@ -18,6 +18,7 @@
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/res/drawable-xxhdpi/icon.png \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/res/drawable-xxxhdpi/icon.png \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/res/values/strings.xml \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/res/values/version.xml \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/res/xml/config.xml \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/res/drawable/icon.png \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/ant-build/res/drawable-hdpi/ic_action_next_item.png \
@@ -84,9 +85,12 @@
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/lib/ionic/js/angular/angular.min.js \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/lib/ionic/js/angular-ui/angular-ui-router.js \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/lib/ionic/js/angular-ui/angular-ui-router.min.js \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/plugins/com.rjfun.cordova.plugin.admob \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/plugins/org.apache.cordova.statusbar \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/plugins/com.rjfun.cordova.plugin.admob/www \
+/Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/plugins/com.rjfun.cordova.plugin.admob/www/AdMob.js \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
 /Users/amr/Documents/itworx/amr/begadhakiky/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser/www \

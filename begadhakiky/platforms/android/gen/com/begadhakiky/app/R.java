@@ -16,6 +16,9 @@ public final class R {
         public static final int ic_action_remove=0x7f020002;
         public static final int icon=0x7f020003;
     }
+    public static final class integer {
+        public static final int google_play_services_version=0x7f050000;
+    }
     public static final class string {
         public static final int app_name=0x7f040000;
     }

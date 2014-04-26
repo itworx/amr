@@ -48,7 +48,7 @@ angular.module('sociogram.controllers', [])
         $scope.share = function () {
             OpenFB.post('/me/feed', $scope.item)
                 .success(function () {
-                    $scope.status = "This item has been shared on OpenFB";
+                    $scope.status = "This item has been shared on your facebook wall";
                 })
                 .error(function(data) {
                     alert(data.error.message);
@@ -69,7 +69,7 @@ angular.module('sociogram.controllers', [])
         $scope.comment = function () {
             OpenFB.post('/'+$stateParams.storyId+'/comments', $scope.item)
                 .success(function () {
-                    alert("Comment posted!");
+                    $scope.status = "You comment has been posted";
                 })
                 .error(function(data) {
                     alert(data.error.message);
@@ -141,7 +141,7 @@ angular.module('sociogram.controllers', [])
         function loadFeed() {
             $scope.show();
 
-            OpenFB.get('/begadhakiky/photos/uploaded', {limit:3,
+            OpenFB.get('/768581376487994/photos', {limit:4,
                 fields:"name, source, likes.limit(1).summary(true), comments.limit(1).summary(true)"})
                 .success(function (result) {
 
@@ -163,8 +163,6 @@ angular.module('sociogram.controllers', [])
 
         $scope.loadMore = function(){
 
-            alert('I come here');
-            alert($scope.next);
             OpenFB.get($scope.next)
                 .success(function (result) {
 
@@ -182,8 +180,6 @@ angular.module('sociogram.controllers', [])
                     //$scope.hide();
                     alert(data.error.message);
                 });
-
         }
-
 
     });
