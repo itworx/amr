@@ -12,7 +12,7 @@ angular.module('begadhakiky', ['ionic', 'openfb', 'sociogram.controllers'])
 
 
             if( window.plugins && window.plugins.AdMob ) {
-                var admob_ios_key = 'ca-app-pub-1435204346149710/9888674387';
+                var admob_ios_key = 'ca-app-pub-1435204346149710/9160317582';
                 var admob_android_key = 'ca-app-pub-1435204346149710/9888674387';
                 var adId = (navigator.userAgent.indexOf('Android') >=0) ? admob_android_key : admob_ios_key;
                 var am = window.plugins.AdMob;
