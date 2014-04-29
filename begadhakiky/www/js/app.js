@@ -9,8 +9,6 @@ angular.module('begadhakiky', ['ionic', 'openfb', 'sociogram.controllers'])
                 StatusBar.styleDefault();
             }
 
-
-
             if( window.plugins && window.plugins.AdMob ) {
                 var admob_ios_key = 'ca-app-pub-1435204346149710/9160317582';
                 var admob_android_key = 'ca-app-pub-1435204346149710/9888674387';
